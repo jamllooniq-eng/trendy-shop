@@ -5,6 +5,7 @@
  */
 
 import { createClient, SupabaseClient } from '@supabase/supabase-js';
+import WebSocket from 'ws';
 
 let cachedClient: SupabaseClient | null = null;
 
@@ -25,6 +26,13 @@ export function getSupabaseClient(): SupabaseClient {
       // السيرفر لا يحتاج جلسة مستخدم دائمة لقراءة/كتابة المنتجات
       persistSession: false,
       autoRefreshToken: false,
+    },
+    // بيئات Node.js التي لا تدعم WebSocket بشكل أصلي (Node < 22، مثل بعض
+    // بيئات تشغيل Netlify Functions) تحتاج توفير تطبيق WebSocket صراحة،
+    // وإلا يفشل إنشاء عميل Supabase فورًا بخطأ "native WebSocket not found"
+    // حتى لو لم نستخدم ميزة Realtime إطلاقًا.
+    realtime: {
+      transport: WebSocket as any,
     },
   });
 
