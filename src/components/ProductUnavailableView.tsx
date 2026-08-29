@@ -63,7 +63,7 @@ export const ProductUnavailableView: React.FC<ProductUnavailableViewProps> = ({
             <button
               type="button"
               onClick={handleReload}
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-[#8B5E3C] hover:bg-[#1b8581] text-white font-extrabold text-sm shadow-xs hover:shadow-md transition-all cursor-pointer active:scale-95"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-[#22A39E] hover:bg-[#1b8581] text-white font-extrabold text-sm shadow-xs hover:shadow-md transition-all cursor-pointer active:scale-95"
             >
               <RotateCw className="w-4 h-4" />
               <span>إعادة تحميل الصفحة</span>

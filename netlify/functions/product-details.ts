@@ -20,8 +20,8 @@ export const handler: Handler = async (event) => {
         statusCode: 200,
         headers: {
           'Content-Type': 'application/json',
-          'Cache-Control': 'public, max-age=15, s-maxage=30, stale-while-revalidate=300',
-          'Netlify-CDN-Cache-Control': 'public, max-age=30, stale-while-revalidate=300',
+          'Cache-Control': 'public, max-age=120, s-maxage=600, stale-while-revalidate=86400',
+          'Netlify-CDN-Cache-Control': 'public, max-age=600, stale-while-revalidate=86400',
         },
         body: JSON.stringify(result.product),
       };

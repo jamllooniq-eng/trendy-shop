@@ -97,15 +97,15 @@ export const CategoryList: React.FC<CategoryListProps> = ({
             onClick={() => onSelectCategory('')}
             className={`group inline-flex items-center gap-2 px-3.5 py-1.5 sm:px-4 sm:py-2 rounded-xl text-xs sm:text-sm font-bold whitespace-nowrap transition-all duration-200 shrink-0 cursor-pointer border ${
               selectedCategory === ''
-                ? 'bg-[#8B5E3C] text-white border-[#8B5E3C] shadow-sm'
-                : 'bg-white hover:bg-gray-50 text-gray-800 border-gray-200/90 hover:border-[#8B5E3C]/40 shadow-2xs'
+                ? 'bg-[#22A39E] text-white border-[#22A39E] shadow-sm'
+                : 'bg-white hover:bg-gray-50 text-gray-800 border-gray-200/90 hover:border-[#22A39E]/40 shadow-2xs'
             }`}
           >
             <div
               className={`w-7 h-7 sm:w-7.5 sm:h-7.5 rounded-lg flex items-center justify-center transition-colors shrink-0 ${
                 selectedCategory === ''
                   ? 'bg-white/20 text-white'
-                  : 'bg-[#F4F6F8] text-[#8B5E3C] group-hover:bg-[#8B5E3C] group-hover:text-white'
+                  : 'bg-[#F4F6F8] text-[#22A39E] group-hover:bg-[#22A39E] group-hover:text-white'
               }`}
             >
               <LayoutGrid className="w-4 h-4 shrink-0" />
@@ -127,15 +127,15 @@ export const CategoryList: React.FC<CategoryListProps> = ({
                 }}
                 className={`group inline-flex items-center gap-2 px-3.5 py-1.5 sm:px-4 sm:py-2 rounded-xl text-xs sm:text-sm font-semibold whitespace-nowrap transition-all duration-200 shrink-0 cursor-pointer border ${
                   isSelected
-                    ? 'bg-[#8B5E3C] text-white border-[#8B5E3C] shadow-sm'
-                    : 'bg-white hover:bg-gray-50 text-gray-800 border-gray-200/90 hover:border-[#8B5E3C]/40 shadow-2xs'
+                    ? 'bg-[#22A39E] text-white border-[#22A39E] shadow-sm'
+                    : 'bg-white hover:bg-gray-50 text-gray-800 border-gray-200/90 hover:border-[#22A39E]/40 shadow-2xs'
                 }`}
               >
                 <div
                   className={`w-7 h-7 sm:w-7.5 sm:h-7.5 rounded-lg flex items-center justify-center transition-colors shrink-0 ${
                     isSelected
                       ? 'bg-white/20 text-white'
-                      : 'bg-[#F4F6F8] text-[#8B5E3C] group-hover:bg-[#8B5E3C] group-hover:text-white'
+                      : 'bg-[#F4F6F8] text-[#22A39E] group-hover:bg-[#22A39E] group-hover:text-white'
                   }`}
                 >
                   <IconComponent className="w-4 h-4 shrink-0" />

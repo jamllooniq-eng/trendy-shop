@@ -25,10 +25,10 @@ export const Footer: React.FC<FooterProps> = ({
               className="flex items-center gap-2 cursor-pointer text-right group focus:outline-none transition-all"
               title="العودة للرئيسية"
             >
-              <div className="w-8 h-8 rounded-lg bg-[#8B5E3C] text-white flex items-center justify-center transition-transform group-hover:scale-105">
+              <div className="w-8 h-8 rounded-lg bg-[#22A39E] text-white flex items-center justify-center transition-transform group-hover:scale-105">
                 <ShoppingBag className="w-4 h-4" />
               </div>
-              <span className="text-xl font-bold group-hover:text-[#8B5E3C] transition-colors">برستيل</span>
+              <span className="text-xl font-bold group-hover:text-[#22A39E] transition-colors">تريندي</span>
             </button>
             <p className="text-xs text-gray-600 leading-relaxed">
               متجرك الموثوق في العراق لأفضل المنتجات والأجهزة المبتكرة. تجربة تسوق مباشرة، سريعة، وبدون تعقيد مع ضمان المعاينة قبل الدفع.
@@ -41,7 +41,7 @@ export const Footer: React.FC<FooterProps> = ({
           {/* Quick Links */}
           <div>
             <h3 className="text-sm font-bold text-black mb-3.5 flex items-center gap-1.5">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#8B5E3C]"></span>
+              <span className="w-1.5 h-1.5 rounded-full bg-[#22A39E]"></span>
               <span>روابط سريعة</span>
             </h3>
             <ul className="space-y-2 text-xs text-gray-600">
@@ -49,7 +49,7 @@ export const Footer: React.FC<FooterProps> = ({
                 <button
                   type="button"
                   onClick={onResetToHome}
-                  className="hover:text-[#8B5E3C] transition-colors cursor-pointer"
+                  className="hover:text-[#22A39E] transition-colors cursor-pointer"
                 >
                   الرئيسية
                 </button>
@@ -67,7 +67,7 @@ export const Footer: React.FC<FooterProps> = ({
                       document.getElementById('products')?.scrollIntoView({ behavior: 'smooth' });
                     }
                   }}
-                  className="hover:text-[#8B5E3C] transition-colors cursor-pointer"
+                  className="hover:text-[#22A39E] transition-colors cursor-pointer"
                 >
                   جميع المنتجات
                 </button>
@@ -76,7 +76,7 @@ export const Footer: React.FC<FooterProps> = ({
                 <button
                   type="button"
                   onClick={() => onOpenPolicy('about')}
-                  className="hover:text-[#8B5E3C] transition-colors cursor-pointer"
+                  className="hover:text-[#22A39E] transition-colors cursor-pointer"
                 >
                   من نحن
                 </button>
@@ -87,14 +87,14 @@ export const Footer: React.FC<FooterProps> = ({
           {/* Policies */}
           <div>
             <h3 className="text-sm font-bold text-black mb-3.5 flex items-center gap-1.5">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#8B5E3C]"></span>
+              <span className="w-1.5 h-1.5 rounded-full bg-[#22A39E]"></span>
               <span>السياسات والضمان</span>
             </h3>
             <ul className="space-y-2 text-xs text-gray-600">
               <li>
                 <button
                   onClick={() => onOpenPolicy('returns')}
-                  className="hover:text-[#8B5E3C] transition-colors cursor-pointer"
+                  className="hover:text-[#22A39E] transition-colors cursor-pointer"
                 >
                   الاستبدال والاسترجاع
                 </button>
@@ -102,7 +102,7 @@ export const Footer: React.FC<FooterProps> = ({
               <li>
                 <button
                   onClick={() => onOpenPolicy('privacy')}
-                  className="hover:text-[#8B5E3C] transition-colors cursor-pointer"
+                  className="hover:text-[#22A39E] transition-colors cursor-pointer"
                 >
                   سياسة الخصوصية
                 </button>
@@ -110,7 +110,7 @@ export const Footer: React.FC<FooterProps> = ({
               <li>
                 <button
                   onClick={() => onOpenPolicy('terms')}
-                  className="hover:text-[#8B5E3C] transition-colors cursor-pointer"
+                  className="hover:text-[#22A39E] transition-colors cursor-pointer"
                 >
                   الشروط والأحكام
                 </button>
@@ -121,24 +121,24 @@ export const Footer: React.FC<FooterProps> = ({
           {/* Guarantees */}
           <div className="space-y-3">
             <h3 className="text-sm font-bold text-black mb-3.5 flex items-center gap-1.5">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#8B5E3C]"></span>
+              <span className="w-1.5 h-1.5 rounded-full bg-[#22A39E]"></span>
               <span>ضمانات المتجر</span>
             </h3>
             <div className="space-y-2 text-xs text-gray-600">
               <div className="flex items-center gap-2">
-                <Truck className="w-4 h-4 text-[#8B5E3C] shrink-0" />
+                <Truck className="w-4 h-4 text-[#22A39E] shrink-0" />
                 <span>شحن مجاني لكل المحافظات</span>
               </div>
               <div className="flex items-center gap-2">
-                <ShieldCheck className="w-4 h-4 text-[#8B5E3C] shrink-0" />
+                <ShieldCheck className="w-4 h-4 text-[#22A39E] shrink-0" />
                 <span>الدفع عند الاستلام والمعاينة</span>
               </div>
               <div className="flex items-center gap-2">
-                <RefreshCw className="w-4 h-4 text-[#8B5E3C] shrink-0" />
+                <RefreshCw className="w-4 h-4 text-[#22A39E] shrink-0" />
                 <span>استبدال فوري عند وجود عيب مصنعي</span>
               </div>
               <div className="flex items-center gap-2">
-                <Clock className="w-4 h-4 text-[#8B5E3C] shrink-0" />
+                <Clock className="w-4 h-4 text-[#22A39E] shrink-0" />
                 <span>معالجة وتجهيز فوري للطلبات</span>
               </div>
             </div>
@@ -152,15 +152,15 @@ export const Footer: React.FC<FooterProps> = ({
             <button
               type="button"
               onClick={onResetToHome}
-              className="font-semibold text-gray-700 hover:text-[#8B5E3C] transition-colors cursor-pointer"
+              className="font-semibold text-gray-700 hover:text-[#22A39E] transition-colors cursor-pointer"
             >
-              برستيل (Presteel)
+              تريندي (Trendy)
             </button>
             . جميع الحقوق محفوظة.
           </p>
           <p className="flex items-center gap-1">
             <span>تسوق آمن ومباشر</span>
-            <span className="text-[#8B5E3C] font-bold">100%</span>
+            <span className="text-[#22A39E] font-bold">100%</span>
           </p>
         </div>
       </div>

@@ -3,7 +3,7 @@ import { RolemallProduct } from '../types';
 export function updatePageSEO(title: string, description?: string, image?: string): void {
   if (typeof document === 'undefined') return;
 
-  const siteName = 'برستيل | PRESTEEL';
+  const siteName = 'تريندي | TRENDY';
   document.title = title ? `${title} | ${siteName}` : siteName;
 
   const metaDescription = document.querySelector('meta[name="description"]');
@@ -60,7 +60,7 @@ export function injectProductJsonLd(product: RolemallProduct): void {
       url: typeof window !== 'undefined' ? window.location.href : '',
       seller: {
         '@type': 'Organization',
-        name: 'برستيل'
+        name: 'تريندي'
       }
     },
     breadcrumb: {

@@ -68,7 +68,7 @@ export const TopLoadingBar: React.FC<TopLoadingBarProps> = ({ trigger }) => {
     >
       <div
         id="top-loading-bar-indicator"
-        className="h-full bg-[#8B5E3C] shadow-[0_0_8px_#8B5E3C]"
+        className="h-full bg-[#22A39E] shadow-[0_0_8px_#22A39E]"
         style={{
           width: `${progress}%`,
           transition: progress === 0 ? 'none' : 'width 300ms cubic-bezier(0.4, 0, 0.2, 1)',

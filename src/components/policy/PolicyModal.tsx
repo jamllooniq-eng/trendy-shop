@@ -20,7 +20,7 @@ export const PolicyModal: React.FC<PolicyModalProps> = ({ type, onClose }) => {
       body: (
         <div className="space-y-4 text-xs sm:text-sm text-gray-700 leading-relaxed">
           <p>
-            نحن في متجر <strong>برستيل</strong> نولي خصوصية بيانات عملائنا في العراق الأهمية القصوى.
+            نحن في متجر <strong>تريندي</strong> نولي خصوصية بيانات عملائنا في العراق الأهمية القصوى.
           </p>
           <h4 className="font-bold text-black text-sm">1. البيانات التي نجمعها</h4>
           <p>
@@ -44,7 +44,7 @@ export const PolicyModal: React.FC<PolicyModalProps> = ({ type, onClose }) => {
         <div className="space-y-4 text-xs sm:text-sm text-gray-700 leading-relaxed">
           <h4 className="font-bold text-black text-sm">1. نظام الطلب والدفع</h4>
           <p>
-            جميع الطلبات في متجر <strong>برستيل</strong> تعتمد على نظام الدفع عند الاستلام والمعاينة (Cash on Delivery) بعد فحص المنتج والتأكد منه.
+            جميع الطلبات في متجر <strong>تريندي</strong> تعتمد على نظام الدفع عند الاستلام والمعاينة (Cash on Delivery) بعد فحص المنتج والتأكد منه.
           </p>
           <h4 className="font-bold text-black text-sm">2. التوصيل والشحن</h4>
           <p>
@@ -78,12 +78,12 @@ export const PolicyModal: React.FC<PolicyModalProps> = ({ type, onClose }) => {
       ),
     },
     about: {
-      title: 'عن متجر برستيل',
+      title: 'عن متجر تريندي',
       icon: Info,
       body: (
         <div className="space-y-4 text-xs sm:text-sm text-gray-700 leading-relaxed">
           <p>
-            <strong>برستيل</strong> هو متجر إلكتروني عراقي متخصص في تقديم أحدث الأجهزة الذكية، الإلكترونيات، الإكسسوارات، والمنتجات المنزلية المبتكرة.
+            <strong>تريندي</strong> هو متجر إلكتروني عراقي متخصص في تقديم أحدث الأجهزة الذكية، الإلكترونيات، الإكسسوارات، والمنتجات المنزلية المبتكرة.
           </p>
           <p>
             نسعى لتبسيط تجربة التسوق في العراق من خلال توفير الشحن المجاني بنسبة 100%، والدفع عند الاستلام مع المعاينة المباشرة، لضمان رضا وثقة كل عميل في كل طلب.
@@ -116,7 +116,7 @@ export const PolicyModal: React.FC<PolicyModalProps> = ({ type, onClose }) => {
         </button>
 
         <div className="flex items-center gap-2.5 pb-4 mb-4 border-b border-[#E5E5E5]">
-          <div className="w-9 h-9 rounded-xl bg-[#8B5E3C]/10 text-[#8B5E3C] flex items-center justify-center">
+          <div className="w-9 h-9 rounded-xl bg-[#22A39E]/10 text-[#22A39E] flex items-center justify-center">
             <Icon className="w-5 h-5" />
           </div>
           <h3 className="text-base sm:text-lg font-bold text-black">
@@ -129,7 +129,7 @@ export const PolicyModal: React.FC<PolicyModalProps> = ({ type, onClose }) => {
         <div className="mt-6 pt-4 border-t border-[#E5E5E5] text-left">
           <button
             onClick={onClose}
-            className="px-5 py-2 rounded-xl bg-[#8B5E3C] hover:bg-[#1b8581] text-white text-xs font-bold transition-colors cursor-pointer"
+            className="px-5 py-2 rounded-xl bg-[#22A39E] hover:bg-[#1b8581] text-white text-xs font-bold transition-colors cursor-pointer"
           >
             إغلاق
           </button>

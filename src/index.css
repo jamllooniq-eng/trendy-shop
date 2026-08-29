@@ -3,12 +3,12 @@
 
 @layer base {
   :root {
-    --primary: #8B5E3C;
-    --primary-dark: #6B4226;
+    --primary: #22A39E;
+    --primary-dark: #1b8581;
     --secondary: #000000;
-    --background: #FBF7F0;
-    --background-light: #F3EBDF;
-    --border: #E8DCC8;
+    --background: #FFFFFF;
+    --background-light: #F7F7F7;
+    --border: #E5E5E5;
   }
 
   body {
@@ -34,7 +34,7 @@
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #8B5E3C;
+  background: #22A39E;
 }
 
 /* Hide scrollbar for Chrome, Safari, Opera and Firefox */

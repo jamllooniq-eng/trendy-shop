@@ -40,10 +40,10 @@ export const Login: React.FC<LoginProps> = ({ onSuccess }) => {
     <div className="min-h-screen flex items-center justify-center bg-gray-50 px-4">
       <div className="w-full max-w-sm bg-white border border-gray-200 rounded-2xl shadow-xl p-6 sm:p-8">
         <div className="text-center mb-6">
-          <div className="w-14 h-14 mx-auto rounded-full bg-[#8B5E3C]/10 flex items-center justify-center mb-3">
-            <Lock className="w-7 h-7 text-[#8B5E3C]" />
+          <div className="w-14 h-14 mx-auto rounded-full bg-[#22A39E]/10 flex items-center justify-center mb-3">
+            <Lock className="w-7 h-7 text-[#22A39E]" />
           </div>
-          <h1 className="text-xl font-extrabold text-gray-900">لوحة تحكم برستيل</h1>
+          <h1 className="text-xl font-extrabold text-gray-900">لوحة تحكم تريندي</h1>
           <p className="text-sm text-gray-500 mt-1">سجّل الدخول لإدارة المنتجات</p>
         </div>
 
@@ -57,7 +57,7 @@ export const Login: React.FC<LoginProps> = ({ onSuccess }) => {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 dir="ltr"
-                className="w-full text-right pr-10 pl-3 py-2.5 rounded-xl border border-gray-300 focus:border-[#8B5E3C] focus:ring-2 focus:ring-[#8B5E3C]/20 outline-none text-sm"
+                className="w-full text-right pr-10 pl-3 py-2.5 rounded-xl border border-gray-300 focus:border-[#22A39E] focus:ring-2 focus:ring-[#22A39E]/20 outline-none text-sm"
                 placeholder="you@example.com"
                 autoComplete="email"
               />
@@ -73,7 +73,7 @@ export const Login: React.FC<LoginProps> = ({ onSuccess }) => {
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 dir="ltr"
-                className="w-full text-right pr-10 pl-3 py-2.5 rounded-xl border border-gray-300 focus:border-[#8B5E3C] focus:ring-2 focus:ring-[#8B5E3C]/20 outline-none text-sm"
+                className="w-full text-right pr-10 pl-3 py-2.5 rounded-xl border border-gray-300 focus:border-[#22A39E] focus:ring-2 focus:ring-[#22A39E]/20 outline-none text-sm"
                 placeholder="••••••••"
                 autoComplete="current-password"
               />
@@ -90,7 +90,7 @@ export const Login: React.FC<LoginProps> = ({ onSuccess }) => {
           <button
             type="submit"
             disabled={loading}
-            className="w-full bg-[#8B5E3C] hover:bg-[#6B4226] disabled:opacity-60 text-white font-bold py-2.5 rounded-xl transition-colors flex items-center justify-center gap-2"
+            className="w-full bg-[#22A39E] hover:bg-[#1c8a86] disabled:opacity-60 text-white font-bold py-2.5 rounded-xl transition-colors flex items-center justify-center gap-2"
           >
             {loading ? <LoaderCircle className="w-4 h-4 animate-spin" /> : null}
             {loading ? 'جارِ الدخول...' : 'دخول'}

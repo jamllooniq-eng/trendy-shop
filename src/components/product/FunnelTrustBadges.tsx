@@ -28,12 +28,12 @@ export const FunnelTrustBadges: React.FC = () => {
   return (
     <div className="py-8 border-y border-[#E5E5E5] bg-[#F7F7F7] rounded-2xl p-6">
       <div className="text-center max-w-xl mx-auto mb-6">
-        <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#8B5E3C]/10 text-[#8B5E3C] font-bold text-xs mb-2">
+        <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#22A39E]/10 text-[#22A39E] font-bold text-xs mb-2">
           <CheckCircle2 className="w-3.5 h-3.5" />
           <span>تسوق براحة وأمان 100%</span>
         </span>
         <h2 className="text-xl sm:text-2xl font-extrabold text-black">
-          ضمانات برستيل لجميع زبائننا في العراق
+          ضمانات تريندي لجميع زبائننا في العراق
         </h2>
       </div>
 
@@ -43,9 +43,9 @@ export const FunnelTrustBadges: React.FC = () => {
           return (
             <div
               key={idx}
-              className="bg-white p-5 rounded-xl border border-[#E5E5E5] shadow-2xs hover:border-[#8B5E3C] transition-all text-center flex flex-col items-center"
+              className="bg-white p-5 rounded-xl border border-[#E5E5E5] shadow-2xs hover:border-[#22A39E] transition-all text-center flex flex-col items-center"
             >
-              <div className="w-12 h-12 rounded-xl bg-[#F7F7F7] text-[#8B5E3C] flex items-center justify-center mb-3">
+              <div className="w-12 h-12 rounded-xl bg-[#F7F7F7] text-[#22A39E] flex items-center justify-center mb-3">
                 <Icon className="w-6 h-6" />
               </div>
               <h3 className="font-extrabold text-sm text-black mb-1.5">{g.title}</h3>

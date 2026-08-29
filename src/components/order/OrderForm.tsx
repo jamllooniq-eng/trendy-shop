@@ -156,17 +156,17 @@ export const OrderForm: React.FC<OrderFormProps> = ({
   return (
     <div
       id="order-form-card"
-      className="scroll-mt-4 bg-white border border-[#8B5E3C]/40 sm:border-2 sm:border-[#8B5E3C]/60 rounded-2xl sm:rounded-3xl p-4 sm:p-6 shadow-xl shadow-[#8B5E3C]/5 relative overflow-hidden ring-2 sm:ring-4 ring-[#8B5E3C]/10"
+      className="scroll-mt-4 bg-white border border-[#22A39E]/40 sm:border-2 sm:border-[#22A39E]/60 rounded-2xl sm:rounded-3xl p-4 sm:p-6 shadow-xl shadow-[#22A39E]/5 relative overflow-hidden ring-2 sm:ring-4 ring-[#22A39E]/10"
     >
       {/* Accent Top Gradient Header Bar */}
-      <div className="absolute top-0 right-0 left-0 h-2 bg-gradient-to-r from-[#8B5E3C] via-[#2ec4be] to-[#8B5E3C]"></div>
+      <div className="absolute top-0 right-0 left-0 h-2 bg-gradient-to-r from-[#22A39E] via-[#2ec4be] to-[#22A39E]"></div>
 
       {/* Header section inside card — side accent bar + two-tone heading (agreed final design) */}
       <div className="mb-4 sm:mb-5 text-right min-w-0">
         <div className="flex items-center justify-start gap-3">
-          <span className="h-7 w-1 shrink-0 rounded-full bg-[#8B5E3C]" />
+          <span className="h-7 w-1 shrink-0 rounded-full bg-[#22A39E]" />
           <h3 className="text-base sm:text-lg font-extrabold leading-tight tracking-tight text-[#172033]">
-            يرجى إدخال <span className="text-[#8B5E3C]">معلوماتك</span> لإكمال الطلب
+            يرجى إدخال <span className="text-[#22A39E]">معلوماتك</span> لإكمال الطلب
           </h3>
         </div>
         <div className="mt-3 h-px w-full bg-gradient-to-l from-gray-100 via-gray-100 to-transparent" />
@@ -186,7 +186,7 @@ export const OrderForm: React.FC<OrderFormProps> = ({
         </div>
 
         {/* Order Total Price Card (Underneath Quantity) */}
-        <div className="p-2.5 sm:p-3.5 rounded-xl sm:rounded-2xl bg-[#8B5E3C]/8 border-2 border-[#8B5E3C]/30 flex items-center justify-between shadow-2xs gap-2 min-w-0">
+        <div className="p-2.5 sm:p-3.5 rounded-xl sm:rounded-2xl bg-[#22A39E]/8 border-2 border-[#22A39E]/30 flex items-center justify-between shadow-2xs gap-2 min-w-0">
           <span className="text-sm sm:text-base font-extrabold text-gray-900 select-none pr-1">
             إجمالي الطلب
           </span>
@@ -214,8 +214,8 @@ export const OrderForm: React.FC<OrderFormProps> = ({
       <form onSubmit={handleSubmit} className="space-y-3.5 sm:space-y-4">
         {/* Full Name */}
         <div className="group">
-          <label htmlFor="cus_name" className="block text-xs sm:text-sm font-black text-gray-900 mb-1.5 transition-colors group-focus-within:text-[#8B5E3C]">
-            الاسم الكامل <span className="text-[#8B5E3C] font-black">*</span>
+          <label htmlFor="cus_name" className="block text-xs sm:text-sm font-black text-gray-900 mb-1.5 transition-colors group-focus-within:text-[#22A39E]">
+            الاسم الكامل <span className="text-[#22A39E] font-black">*</span>
           </label>
           <div className="relative">
             {/* ⚠️ لا تُغيّر text-base هنا إلى text-sm أو حجم متغيّر بالموبايل — يُفعّل تكبير الشاشة التلقائي بـ Safari/iOS */}
@@ -228,16 +228,16 @@ export const OrderForm: React.FC<OrderFormProps> = ({
               onFocus={handleInputFocus}
               onChange={(e) => setName(e.target.value)}
               placeholder="اكتب اسمك هنا"
-              className={`w-full h-12 sm:h-13 bg-[#FAFAFA] hover:bg-white text-gray-900 ${INPUT_TEXT_SIZE} font-bold rounded-xl pr-11 pl-4 border-2 border-gray-300/90 focus:bg-white focus:border-[#8B5E3C] focus:ring-4 focus:ring-[#8B5E3C]/15 transition-all outline-none shadow-xs placeholder:text-gray-400 placeholder:font-normal`}
+              className={`w-full h-12 sm:h-13 bg-[#FAFAFA] hover:bg-white text-gray-900 ${INPUT_TEXT_SIZE} font-bold rounded-xl pr-11 pl-4 border-2 border-gray-300/90 focus:bg-white focus:border-[#22A39E] focus:ring-4 focus:ring-[#22A39E]/15 transition-all outline-none shadow-xs placeholder:text-gray-400 placeholder:font-normal`}
             />
-            <User className="w-5 h-5 text-[#8B5E3C] group-focus-within:text-[#178581] transition-colors absolute right-3.5 top-1/2 -translate-y-1/2 pointer-events-none" />
+            <User className="w-5 h-5 text-[#22A39E] group-focus-within:text-[#178581] transition-colors absolute right-3.5 top-1/2 -translate-y-1/2 pointer-events-none" />
           </div>
         </div>
 
         {/* Phone Number */}
         <div className="group">
-          <label htmlFor="cus_num1" className="block text-xs sm:text-sm font-black text-gray-900 mb-1.5 transition-colors group-focus-within:text-[#8B5E3C]">
-            رقم الهاتف <span className="text-[#8B5E3C] font-black">*</span>
+          <label htmlFor="cus_num1" className="block text-xs sm:text-sm font-black text-gray-900 mb-1.5 transition-colors group-focus-within:text-[#22A39E]">
+            رقم الهاتف <span className="text-[#22A39E] font-black">*</span>
           </label>
           <div className="relative">
             {/* ⚠️ لا تُغيّر text-base هنا إلى text-sm أو حجم متغيّر بالموبايل — يُفعّل تكبير الشاشة التلقائي بـ Safari/iOS */}
@@ -260,10 +260,10 @@ export const OrderForm: React.FC<OrderFormProps> = ({
               className={`w-full h-12 sm:h-13 text-gray-900 ${INPUT_TEXT_SIZE} font-bold rounded-xl pl-11 pr-4 border-2 transition-all outline-none font-mono shadow-xs placeholder:text-gray-400 placeholder:font-sans ${
                 phoneError
                   ? 'bg-red-50/50 border-red-400 focus:border-red-500 focus:ring-4 focus:ring-red-100'
-                  : 'bg-[#FAFAFA] hover:bg-white border-gray-300/90 focus:bg-white focus:border-[#8B5E3C] focus:ring-4 focus:ring-[#8B5E3C]/15'
+                  : 'bg-[#FAFAFA] hover:bg-white border-gray-300/90 focus:bg-white focus:border-[#22A39E] focus:ring-4 focus:ring-[#22A39E]/15'
               }`}
             />
-            <Phone className={`w-5 h-5 transition-colors absolute left-3.5 top-1/2 -translate-y-1/2 pointer-events-none ${phoneError ? 'text-red-500' : 'text-[#8B5E3C] group-focus-within:text-[#178581]'}`} />
+            <Phone className={`w-5 h-5 transition-colors absolute left-3.5 top-1/2 -translate-y-1/2 pointer-events-none ${phoneError ? 'text-red-500' : 'text-[#22A39E] group-focus-within:text-[#178581]'}`} />
           </div>
           {phoneError && (
             <p className="text-xs sm:text-sm text-red-600 mt-1.5 font-bold flex items-center gap-1.5">
@@ -275,8 +275,8 @@ export const OrderForm: React.FC<OrderFormProps> = ({
 
         {/* Governorate Select */}
         <div className="group">
-          <label htmlFor="capetel" className="block text-xs sm:text-sm font-black text-gray-900 mb-1.5 transition-colors group-focus-within:text-[#8B5E3C]">
-            المحافظة <span className="text-[#8B5E3C] font-black">*</span>
+          <label htmlFor="capetel" className="block text-xs sm:text-sm font-black text-gray-900 mb-1.5 transition-colors group-focus-within:text-[#22A39E]">
+            المحافظة <span className="text-[#22A39E] font-black">*</span>
           </label>
           <div className="relative">
             {/* ⚠️ لا تُغيّر text-base هنا إلى text-sm أو حجم متغيّر بالموبايل — يُفعّل تكبير الشاشة التلقائي بـ Safari/iOS */}
@@ -287,7 +287,7 @@ export const OrderForm: React.FC<OrderFormProps> = ({
               value={governorate}
               onFocus={handleInputFocus}
               onChange={(e) => setGovernorate(e.target.value)}
-              className={`w-full h-12 sm:h-13 ${INPUT_TEXT_SIZE} font-bold rounded-xl pr-11 pl-11 border-2 border-gray-300/90 hover:bg-white focus:bg-white focus:border-[#8B5E3C] focus:ring-4 focus:ring-[#8B5E3C]/15 transition-all outline-none appearance-none cursor-pointer shadow-xs ${
+              className={`w-full h-12 sm:h-13 ${INPUT_TEXT_SIZE} font-bold rounded-xl pr-11 pl-11 border-2 border-gray-300/90 hover:bg-white focus:bg-white focus:border-[#22A39E] focus:ring-4 focus:ring-[#22A39E]/15 transition-all outline-none appearance-none cursor-pointer shadow-xs ${
                 governorate ? 'bg-white text-gray-900' : 'bg-[#FAFAFA] text-gray-500'
               }`}
             >
@@ -300,15 +300,15 @@ export const OrderForm: React.FC<OrderFormProps> = ({
                 </option>
               ))}
             </select>
-            <MapPin className="w-5 h-5 text-[#8B5E3C] group-focus-within:text-[#178581] transition-colors absolute right-3.5 top-1/2 -translate-y-1/2 pointer-events-none" />
-            <ChevronDown className="w-5 h-5 text-gray-500 group-focus-within:text-[#8B5E3C] transition-colors absolute left-3.5 top-1/2 -translate-y-1/2 pointer-events-none" />
+            <MapPin className="w-5 h-5 text-[#22A39E] group-focus-within:text-[#178581] transition-colors absolute right-3.5 top-1/2 -translate-y-1/2 pointer-events-none" />
+            <ChevronDown className="w-5 h-5 text-gray-500 group-focus-within:text-[#22A39E] transition-colors absolute left-3.5 top-1/2 -translate-y-1/2 pointer-events-none" />
           </div>
         </div>
 
         {/* Address */}
         <div className="group">
-          <label htmlFor="address" className="block text-xs sm:text-sm font-black text-gray-900 mb-1.5 transition-colors group-focus-within:text-[#8B5E3C]">
-            العنوان بالتفصيل <span className="text-[#8B5E3C] font-black">*</span>
+          <label htmlFor="address" className="block text-xs sm:text-sm font-black text-gray-900 mb-1.5 transition-colors group-focus-within:text-[#22A39E]">
+            العنوان بالتفصيل <span className="text-[#22A39E] font-black">*</span>
           </label>
           <div className="relative">
             {/* ⚠️ لا تُغيّر text-base هنا إلى text-sm أو حجم متغيّر بالموبايل — يُفعّل تكبير الشاشة التلقائي بـ Safari/iOS */}
@@ -321,9 +321,9 @@ export const OrderForm: React.FC<OrderFormProps> = ({
               onFocus={handleInputFocus}
               onChange={(e) => setAddress(e.target.value)}
               placeholder="المدينة / المنطقة / أقرب نقطة دالة"
-              className={`w-full h-12 sm:h-13 bg-[#FAFAFA] hover:bg-white text-gray-900 ${INPUT_TEXT_SIZE} font-bold rounded-xl pr-11 pl-4 border-2 border-gray-300/90 focus:bg-white focus:border-[#8B5E3C] focus:ring-4 focus:ring-[#8B5E3C]/15 transition-all outline-none shadow-xs placeholder:text-gray-400 placeholder:font-normal`}
+              className={`w-full h-12 sm:h-13 bg-[#FAFAFA] hover:bg-white text-gray-900 ${INPUT_TEXT_SIZE} font-bold rounded-xl pr-11 pl-4 border-2 border-gray-300/90 focus:bg-white focus:border-[#22A39E] focus:ring-4 focus:ring-[#22A39E]/15 transition-all outline-none shadow-xs placeholder:text-gray-400 placeholder:font-normal`}
             />
-            <MapPin className="w-5 h-5 text-[#8B5E3C] group-focus-within:text-[#178581] transition-colors absolute right-3.5 top-1/2 -translate-y-1/2 pointer-events-none" />
+            <MapPin className="w-5 h-5 text-[#22A39E] group-focus-within:text-[#178581] transition-colors absolute right-3.5 top-1/2 -translate-y-1/2 pointer-events-none" />
           </div>
         </div>
 
@@ -333,7 +333,7 @@ export const OrderForm: React.FC<OrderFormProps> = ({
             type="submit"
             id="submit-order-btn"
             disabled={isSubmitting}
-            className="w-full py-3.5 sm:py-4 px-6 rounded-xl sm:rounded-2xl bg-gradient-to-r from-[#8B5E3C] via-[#1f9792] to-[#1a8581] hover:from-[#1b8581] hover:to-[#166e6b] active:scale-[0.99] text-white font-black text-base sm:text-lg flex items-center justify-center gap-2.5 shadow-md shadow-[#8B5E3C]/25 hover:shadow-lg hover:shadow-[#8B5E3C]/35 transition-all disabled:opacity-60 disabled:cursor-not-allowed cursor-pointer animate-gentle-pulse"
+            className="w-full py-3.5 sm:py-4 px-6 rounded-xl sm:rounded-2xl bg-gradient-to-r from-[#22A39E] via-[#1f9792] to-[#1a8581] hover:from-[#1b8581] hover:to-[#166e6b] active:scale-[0.99] text-white font-black text-base sm:text-lg flex items-center justify-center gap-2.5 shadow-md shadow-[#22A39E]/25 hover:shadow-lg hover:shadow-[#22A39E]/35 transition-all disabled:opacity-60 disabled:cursor-not-allowed cursor-pointer animate-gentle-pulse"
           >
             {isSubmitting ? (
               <>
@@ -364,7 +364,7 @@ export const OrderForm: React.FC<OrderFormProps> = ({
 
             {/* Free Delivery on the Left side */}
             <div className="flex items-center gap-1.5 text-[#178581] font-black shrink-0">
-              <Truck className="w-4 h-4 text-[#8B5E3C] shrink-0" />
+              <Truck className="w-4 h-4 text-[#22A39E] shrink-0" />
               <span className="text-xs sm:text-sm">التوصيل مجاني</span>
             </div>
           </div>

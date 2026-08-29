@@ -64,7 +64,7 @@ export const handler: Handler = async (event) => {
     const unitPrice = Math.max(0, Number(body.unit_price || 0));
     const expectedTotal = unitPrice * count;
     const itemId = String(body.item_id || '').trim();
-    const productName = String(body.product_name || 'منتج برستيل').trim();
+    const productName = String(body.product_name || 'منتج تريندي').trim();
     const notes = String(body.note || '').trim();
 
     // 2. Duplicate Check within 5 minutes (Synchronous & Fast)

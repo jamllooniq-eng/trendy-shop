@@ -9,7 +9,7 @@ export const handler: Handler = async () => {
       statusCode: 200,
       headers: {
         'Content-Type': 'application/json',
-        'Cache-Control': 'public, max-age=15, s-maxage=30, stale-while-revalidate=300',
+        'Cache-Control': 'public, max-age=120, s-maxage=600, stale-while-revalidate=1800',
       },
       body: JSON.stringify(categories),
     };

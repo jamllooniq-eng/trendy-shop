@@ -44,7 +44,7 @@ export const StickyBottomBar: React.FC<StickyBottomBarProps> = ({
       <button
         id="sticky-order-btn"
         onClick={onScrollToOrder}
-        className="w-full max-w-sm py-3 rounded-xl bg-[#8B5E3C] hover:bg-[#1b8581] active:scale-[0.99] text-white text-base font-extrabold flex items-center justify-center shadow-md cursor-pointer transition-all"
+        className="w-full max-w-sm py-3 rounded-xl bg-[#22A39E] hover:bg-[#1b8581] active:scale-[0.99] text-white text-base font-extrabold flex items-center justify-center shadow-md cursor-pointer transition-all"
       >
         <span>اطلب الآن</span>
       </button>

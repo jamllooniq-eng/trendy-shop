@@ -34,7 +34,7 @@ export const ProductGrid: React.FC<ProductGridProps> = ({
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-6 pb-3.5 border-b border-gray-100">
           <div>
             <div className="flex items-center gap-2">
-              <div className="w-2.5 h-5 bg-[#8B5E3C] rounded-xs"></div>
+              <div className="w-2.5 h-5 bg-[#22A39E] rounded-xs"></div>
               <h2 className="text-lg sm:text-xl font-extrabold text-gray-900">
                 {searchQuery
                   ? `نتائج البحث عن: "${searchQuery}"`
@@ -141,7 +141,7 @@ export const ProductGrid: React.FC<ProductGridProps> = ({
             </p>
             <button
               onClick={onResetFilters}
-              className="px-6 py-2.5 rounded-full bg-[#8B5E3C] text-white text-xs font-bold hover:bg-[#1b8581] transition-colors cursor-pointer"
+              className="px-6 py-2.5 rounded-full bg-[#22A39E] text-white text-xs font-bold hover:bg-[#1b8581] transition-colors cursor-pointer"
             >
               عرض جميع المنتجات
             </button>

@@ -24,7 +24,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             onClick={() => onSelectCategory('')}
             className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs sm:text-sm font-bold whitespace-nowrap transition-all cursor-pointer shrink-0 border ${
               selectedCategory === ''
-                ? 'bg-[#8B5E3C] text-white border-[#8B5E3C] shadow-2xs'
+                ? 'bg-[#22A39E] text-white border-[#22A39E] shadow-2xs'
                 : 'bg-gray-50/80 text-gray-700 hover:bg-gray-100 border-gray-200/80'
             }`}
           >
@@ -44,11 +44,11 @@ export const Navbar: React.FC<NavbarProps> = ({
                 onClick={() => onSelectCategory(String(cat.id))}
                 className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs sm:text-sm font-medium whitespace-nowrap transition-all cursor-pointer shrink-0 border ${
                   isSelected
-                    ? 'bg-[#8B5E3C] text-white font-bold border-[#8B5E3C] shadow-2xs'
+                    ? 'bg-[#22A39E] text-white font-bold border-[#22A39E] shadow-2xs'
                     : 'bg-gray-50/80 text-gray-700 hover:bg-gray-100 border-gray-200/80'
                 }`}
               >
-                <IconComponent className={`w-3.5 h-3.5 ${isSelected ? 'text-white' : 'text-[#8B5E3C]'}`} />
+                <IconComponent className={`w-3.5 h-3.5 ${isSelected ? 'text-white' : 'text-[#22A39E]'}`} />
                 <span>{cat.name}</span>
                 {cat.count && cat.count > 0 && (
                   <span
@@ -64,7 +64,7 @@ export const Navbar: React.FC<NavbarProps> = ({
           })}
 
           {/* Special Deals badge */}
-          <div className="mr-auto hidden md:flex items-center gap-1.5 text-xs text-[#8B5E3C] font-bold pr-2 shrink-0 bg-[#8B5E3C]/5 px-3 py-1 rounded-full border border-[#8B5E3C]/20">
+          <div className="mr-auto hidden md:flex items-center gap-1.5 text-xs text-[#22A39E] font-bold pr-2 shrink-0 bg-[#22A39E]/5 px-3 py-1 rounded-full border border-[#22A39E]/20">
             <Sparkles className="w-3.5 h-3.5" />
             <span>طلب فوري وشحن مجاني 100%</span>
           </div>

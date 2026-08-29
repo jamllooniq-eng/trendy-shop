@@ -167,12 +167,12 @@ export const App: React.FC<AppProps> = ({ ssrRoute, ssrData, HomeViewSync }) => 
         setSelectedProduct(null);
         setIsUnavailable(false);
         setNotFoundState({ active: true, type: 'page' });
-        updatePageSEO('الصفحة غير موجودة | برستيل');
+        updatePageSEO('الصفحة غير موجودة | تريندي');
       } else if (parsed.view === 'unavailable') {
         setSelectedProduct(null);
         setNotFoundState({ active: false, type: 'page' });
         setIsUnavailable(true);
-        updatePageSEO('تعذّر تحميل المنتج مؤقتاً | برستيل');
+        updatePageSEO('تعذّر تحميل المنتج مؤقتاً | تريندي');
       } else {
         setSelectedProduct(null);
         setNotFoundState({ active: false, type: 'page' });
@@ -229,7 +229,7 @@ export const App: React.FC<AppProps> = ({ ssrRoute, ssrData, HomeViewSync }) => 
         setSelectedProduct(null);
         setIsUnavailable(false);
         setNotFoundState({ active: true, type: 'product' });
-        updatePageSEO('المنتج غير موجود | برستيل');
+        updatePageSEO('المنتج غير موجود | تريندي');
         return;
       }
 
@@ -237,13 +237,13 @@ export const App: React.FC<AppProps> = ({ ssrRoute, ssrData, HomeViewSync }) => 
       setSelectedProduct(null);
       setNotFoundState({ active: false, type: 'product' });
       setIsUnavailable(true);
-      updatePageSEO('تعذّر تحميل المنتج مؤقتاً | برستيل');
+      updatePageSEO('تعذّر تحميل المنتج مؤقتاً | تريندي');
     } catch (err) {
       console.error('Failed to fetch product details:', err);
       setSelectedProduct(null);
       setNotFoundState({ active: false, type: 'product' });
       setIsUnavailable(true);
-      updatePageSEO('تعذّر تحميل المنتج مؤقتاً | برستيل');
+      updatePageSEO('تعذّر تحميل المنتج مؤقتاً | تريندي');
     } finally {
       setLoadingProductDetails(false);
     }
@@ -292,7 +292,7 @@ export const App: React.FC<AppProps> = ({ ssrRoute, ssrData, HomeViewSync }) => 
     if (typeof window !== 'undefined') {
       window.history.pushState(null, '', '/');
     }
-    updatePageSEO('برستيل | PRESTEEL - متجر إلكتروني للأجهزة والمنتجات الحديثة');
+    updatePageSEO('تريندي | TRENDY - متجر إلكتروني للأجهزة والمنتجات الحديثة');
   };
 
   const handleSearchChange = (q: string) => {
@@ -374,7 +374,7 @@ export const App: React.FC<AppProps> = ({ ssrRoute, ssrData, HomeViewSync }) => 
   // VIEW 1: Success Screen after order completion
   if (orderSuccess) {
     return (
-      <div className="min-h-screen bg-[#FBF7F0] text-black font-['Cairo',sans-serif]">
+      <div className="min-h-screen bg-white text-black font-['Cairo',sans-serif]">
         <TopLoadingBar trigger={navTrigger} />
         <Suspense fallback={null}>
           <LazySuccessView
@@ -396,7 +396,7 @@ export const App: React.FC<AppProps> = ({ ssrRoute, ssrData, HomeViewSync }) => 
   // VIEW 2.1: Temporarily Unavailable Screen
   if (isUnavailable) {
     return (
-      <div className="min-h-screen bg-[#FBF7F0] text-black font-['Cairo',sans-serif]">
+      <div className="min-h-screen bg-white text-black font-['Cairo',sans-serif]">
         <TopLoadingBar trigger={navTrigger} />
         <Suspense fallback={null}>
           <LazyProductUnavailableView
@@ -417,7 +417,7 @@ export const App: React.FC<AppProps> = ({ ssrRoute, ssrData, HomeViewSync }) => 
   // VIEW 2.2: 404 Not Found Screen (for products or pages)
   if (notFoundState.active) {
     return (
-      <div className="min-h-screen bg-[#FBF7F0] text-black font-['Cairo',sans-serif]">
+      <div className="min-h-screen bg-white text-black font-['Cairo',sans-serif]">
         <TopLoadingBar trigger={navTrigger} />
         <Suspense fallback={null}>
           <LazyNotFoundView
@@ -439,7 +439,7 @@ export const App: React.FC<AppProps> = ({ ssrRoute, ssrData, HomeViewSync }) => 
   // VIEW 3: High-Converting Funnel Landing Page (NO general store header or categories navbar)
   if (selectedProduct) {
     return (
-      <div className="min-h-screen bg-[#FBF7F0] text-black font-['Cairo',sans-serif]">
+      <div className="min-h-screen bg-white text-black font-['Cairo',sans-serif]">
         <TopLoadingBar trigger={navTrigger} />
         <FunnelLandingPage
           product={selectedProduct}

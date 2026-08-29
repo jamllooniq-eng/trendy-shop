@@ -3,7 +3,7 @@ import { getCategories, getProducts } from '../../server/products.server';
 
 export const handler: Handler = async () => {
   try {
-    const baseUrl = process.env.APP_URL || 'https://presteel-iq.com';
+    const baseUrl = process.env.APP_URL || 'https://trendy-iq.com';
     const [categories, productsData] = await Promise.all([
       getCategories(),
       getProducts({ limit: 100 }),

@@ -50,8 +50,8 @@ export const handler: Handler = async (event) => {
     };
 
     if (isSuccess) {
-      headers['Cache-Control'] = 'public, max-age=15, s-maxage=30, stale-while-revalidate=300';
-      headers['Netlify-CDN-Cache-Control'] = 'public, max-age=30, stale-while-revalidate=300';
+      headers['Cache-Control'] = 'public, max-age=60, s-maxage=300, stale-while-revalidate=86400';
+      headers['Netlify-CDN-Cache-Control'] = 'public, max-age=300, stale-while-revalidate=86400';
       headers['Netlify-Vary'] = 'query';
     } else {
       headers['Cache-Control'] = 'no-store';
@@ -76,13 +76,13 @@ export const handler: Handler = async (event) => {
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>حدث خطأ | برستيل</title>
+  <title>حدث خطأ | تريندي</title>
   <style>
     body { font-family: system-ui, sans-serif; display: flex; align-items: center; justify-content: center; min-height: 100vh; margin: 0; background-color: #f8fafc; color: #1e293b; text-align: center; padding: 20px; }
     .box { background: white; padding: 32px; border-radius: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); max-width: 480px; }
     h1 { margin-top: 0; font-size: 24px; color: #0f172a; }
     p { margin-bottom: 24px; color: #64748b; font-size: 14px; }
-    a { display: inline-block; background: #8B5E3C; color: white; padding: 10px 24px; border-radius: 8px; text-decoration: none; font-weight: bold; }
+    a { display: inline-block; background: #22A39E; color: white; padding: 10px 24px; border-radius: 8px; text-decoration: none; font-weight: bold; }
   </style>
 </head>
 <body>

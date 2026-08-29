@@ -43,9 +43,9 @@ export const TrustSection: React.FC = () => {
             return (
               <div
                 key={idx}
-                className="bg-white p-6 rounded-xl border border-[#E5E5E5] flex flex-col items-start text-right hover:border-[#8B5E3C]/50 transition-colors"
+                className="bg-white p-6 rounded-xl border border-[#E5E5E5] flex flex-col items-start text-right hover:border-[#22A39E]/50 transition-colors"
               >
-                <div className="w-10 h-10 rounded-lg bg-[#8B5E3C]/10 text-[#8B5E3C] flex items-center justify-center mb-4">
+                <div className="w-10 h-10 rounded-lg bg-[#22A39E]/10 text-[#22A39E] flex items-center justify-center mb-4">
                   <Icon className="w-5 h-5" />
                 </div>
                 <h3 className="text-sm font-bold text-black mb-1.5">

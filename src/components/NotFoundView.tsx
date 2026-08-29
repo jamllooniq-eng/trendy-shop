@@ -34,7 +34,7 @@ export const NotFoundView: React.FC<NotFoundViewProps> = ({
       <main className="flex-1 flex items-center justify-center px-4 py-16 sm:py-24">
         <div className="max-w-md w-full text-center space-y-6">
           {/* Icon Badge */}
-          <div className="w-24 h-24 mx-auto rounded-3xl bg-[#F7F7F7] border border-[#E5E5E5] flex items-center justify-center text-[#8B5E3C] shadow-xs">
+          <div className="w-24 h-24 mx-auto rounded-3xl bg-[#F7F7F7] border border-[#E5E5E5] flex items-center justify-center text-[#22A39E] shadow-xs">
             {isProduct ? (
               <PackageX className="w-12 h-12 stroke-[1.5]" />
             ) : (
@@ -66,7 +66,7 @@ export const NotFoundView: React.FC<NotFoundViewProps> = ({
             <button
               type="button"
               onClick={onBackToHome}
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-[#8B5E3C] hover:bg-[#1b8581] text-white font-extrabold text-sm shadow-xs hover:shadow-md transition-all cursor-pointer active:scale-95"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-[#22A39E] hover:bg-[#1b8581] text-white font-extrabold text-sm shadow-xs hover:shadow-md transition-all cursor-pointer active:scale-95"
             >
               <ArrowRight className="w-4 h-4" />
               <span>العودة للمتجر</span>

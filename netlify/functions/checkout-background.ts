@@ -57,7 +57,7 @@ export const handler: Handler = async (event) => {
     // 1. Prepare Google Sheets Data
     const sheetData = {
       orderId,
-      productName: productName || 'منتج برستيل',
+      productName: productName || 'منتج تريندي',
       name,
       phone,
       governorate,
@@ -70,7 +70,7 @@ export const handler: Handler = async (event) => {
     };
 
     // 2. Prepare Telegram Message (simplified, order-facing layout)
-    const telegramMsg = `📦 المنتج: ${productName || 'منتج برستيل'}
+    const telegramMsg = `📦 المنتج: ${productName || 'منتج تريندي'}
 
 الاسم: ${name}
 
@@ -84,7 +84,7 @@ export const handler: Handler = async (event) => {
 
 المبلغ الإجمالي: ${Number(totalPrice || 0).toLocaleString('en-US')} د.ع`;
 
-    const productPageUrl = `${(process.env.APP_URL || 'https://presteel-iq.com').replace(/\/+$/, '')}/product/${itemId}`;
+    const productPageUrl = `${(process.env.APP_URL || 'https://trendy-iq.com').replace(/\/+$/, '')}/product/${itemId}`;
 
     // 3. Execute all external delivery destinations in parallel
     const [sheetsSuccess, telegramSuccess, capiSuccess] = await Promise.all([
@@ -94,7 +94,7 @@ export const handler: Handler = async (event) => {
         eventName: 'Purchase',
         eventId: orderId,
         orderId,
-        productName: productName || 'منتج برستيل',
+        productName: productName || 'منتج تريندي',
         productId: itemId,
         totalPriceIqd: totalPrice || 0,
         count: quantity || 1,
