@@ -58,7 +58,7 @@ export const ProductList: React.FC<ProductListProps> = ({ onAddNew, onEdit }) =>
         <h1 className="text-xl font-extrabold text-gray-900">المنتجات ({products.length})</h1>
         <button
           onClick={onAddNew}
-          className="flex items-center gap-1.5 bg-[#22A39E] hover:bg-[#1c8a86] text-white font-bold px-4 py-2.5 rounded-xl text-sm transition-colors"
+          className="flex items-center gap-1.5 bg-[#8B5E3C] hover:bg-[#6B4226] text-white font-bold px-4 py-2.5 rounded-xl text-sm transition-colors"
         >
           <Plus className="w-4 h-4" />
           إضافة منتج
@@ -72,7 +72,7 @@ export const ProductList: React.FC<ProductListProps> = ({ onAddNew, onEdit }) =>
           value={search}
           onChange={(e) => setSearch(e.target.value)}
           placeholder="ابحث باسم المنتج..."
-          className="w-full pr-10 pl-3 py-2.5 rounded-xl border border-gray-300 focus:border-[#22A39E] outline-none text-sm bg-white"
+          className="w-full pr-10 pl-3 py-2.5 rounded-xl border border-gray-300 focus:border-[#8B5E3C] outline-none text-sm bg-white"
         />
       </div>
 
@@ -84,7 +84,7 @@ export const ProductList: React.FC<ProductListProps> = ({ onAddNew, onEdit }) =>
 
       {loading ? (
         <div className="flex items-center justify-center py-20">
-          <LoaderCircle className="w-6 h-6 animate-spin text-[#22A39E]" />
+          <LoaderCircle className="w-6 h-6 animate-spin text-[#8B5E3C]" />
         </div>
       ) : filtered.length === 0 ? (
         <div className="flex flex-col items-center justify-center py-20 text-gray-400">
@@ -115,7 +115,7 @@ export const ProductList: React.FC<ProductListProps> = ({ onAddNew, onEdit }) =>
               <div className="p-3.5 space-y-2">
                 <h3 className="text-sm font-bold text-gray-900 line-clamp-2 min-h-[2.5rem]">{p.title}</h3>
                 <div className="flex items-baseline gap-1">
-                  <span className="text-[#22A39E] font-black">{p.price.toLocaleString('en-US')}</span>
+                  <span className="text-[#8B5E3C] font-black">{p.price.toLocaleString('en-US')}</span>
                   <span className="text-[11px] text-gray-500">د.ع</span>
                   {p.old_price ? (
                     <span className="text-[11px] text-gray-400 line-through mr-1">

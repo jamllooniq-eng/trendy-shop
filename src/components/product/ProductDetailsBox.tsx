@@ -159,14 +159,14 @@ export const ProductDetailsBox: React.FC<ProductDetailsBoxProps> = ({
 
           {/* 2. Trust Badges Row */}
           <div className="grid grid-cols-2 gap-2 pt-0.5">
-            <div className="flex items-center justify-center gap-1.5 sm:gap-2 bg-[#22A39E]/[0.05] border border-[#22A39E]/15 rounded-xl py-2 px-2 sm:px-3 text-center min-w-0">
-              <ShieldCheck className="w-4 h-4 text-[#22A39E] shrink-0" />
+            <div className="flex items-center justify-center gap-1.5 sm:gap-2 bg-[#8B5E3C]/[0.05] border border-[#8B5E3C]/15 rounded-xl py-2 px-2 sm:px-3 text-center min-w-0">
+              <ShieldCheck className="w-4 h-4 text-[#8B5E3C] shrink-0" />
               <span className="text-[11px] sm:text-xs md:text-sm font-bold text-gray-800 truncate">
                 منتج أصلي 100%
               </span>
             </div>
-            <div className="flex items-center justify-center gap-1.5 sm:gap-2 bg-[#22A39E]/[0.05] border border-[#22A39E]/15 rounded-xl py-2 px-2 sm:px-3 text-center min-w-0">
-              <CheckCircle2 className="w-4 h-4 text-[#22A39E] shrink-0" />
+            <div className="flex items-center justify-center gap-1.5 sm:gap-2 bg-[#8B5E3C]/[0.05] border border-[#8B5E3C]/15 rounded-xl py-2 px-2 sm:px-3 text-center min-w-0">
+              <CheckCircle2 className="w-4 h-4 text-[#8B5E3C] shrink-0" />
               <span className="text-[11px] sm:text-xs md:text-sm font-bold text-gray-800 truncate">
                 فحص قبل الاستلام
               </span>
@@ -177,8 +177,8 @@ export const ProductDetailsBox: React.FC<ProductDetailsBoxProps> = ({
 
       {/* 3. Section Title Indicator */}
       <div className="flex items-center gap-2 text-xs font-bold text-gray-900 pt-0.5 min-w-0">
-        <div className="flex items-center gap-2 text-[#22A39E]">
-          <span className="w-2.5 h-2.5 rounded-full bg-[#22A39E] animate-pulse shrink-0"></span>
+        <div className="flex items-center gap-2 text-[#8B5E3C]">
+          <span className="w-2.5 h-2.5 rounded-full bg-[#8B5E3C] animate-pulse shrink-0"></span>
           <span className="text-xs sm:text-sm font-bold text-gray-900 truncate">تفاصيل ومواصفات المنتج</span>
         </div>
       </div>
@@ -190,7 +190,7 @@ export const ProductDetailsBox: React.FC<ProductDetailsBoxProps> = ({
             <div key={secIdx} className="space-y-2.5 min-w-0">
               {/* Optional Subsection Header */}
               {sec.title && (
-                <div className="flex items-center gap-1.5 text-xs font-bold text-[#22A39E] bg-[#22A39E]/[0.06] border border-[#22A39E]/20 px-2.5 py-1.5 rounded-lg w-fit max-w-full">
+                <div className="flex items-center gap-1.5 text-xs font-bold text-[#8B5E3C] bg-[#8B5E3C]/[0.06] border border-[#8B5E3C]/20 px-2.5 py-1.5 rounded-lg w-fit max-w-full">
                   {sec.type === 'box' ? (
                     <Package className="w-3.5 h-3.5 shrink-0" />
                   ) : sec.type === 'specs' ? (
@@ -246,9 +246,9 @@ export const ProductDetailsBox: React.FC<ProductDetailsBoxProps> = ({
                   {sec.items.map((item, iIdx) => (
                     <div
                       key={iIdx}
-                      className="flex items-start gap-2.5 p-2.5 sm:p-3 rounded-xl bg-gray-50/70 hover:bg-[#22A39E]/[0.04] transition-colors border border-gray-100/90 text-right min-w-0"
+                      className="flex items-start gap-2.5 p-2.5 sm:p-3 rounded-xl bg-gray-50/70 hover:bg-[#8B5E3C]/[0.04] transition-colors border border-gray-100/90 text-right min-w-0"
                     >
-                      <div className="w-5 h-5 rounded-full bg-[#22A39E]/10 flex items-center justify-center text-[#22A39E] shrink-0 mt-0.5">
+                      <div className="w-5 h-5 rounded-full bg-[#8B5E3C]/10 flex items-center justify-center text-[#8B5E3C] shrink-0 mt-0.5">
                         <Check className="w-3.5 h-3.5 stroke-[2.5]" />
                       </div>
                       <div className="text-xs sm:text-[14px] leading-relaxed text-gray-800 font-medium break-words min-w-0 flex-1">

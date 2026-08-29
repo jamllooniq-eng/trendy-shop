@@ -13,6 +13,7 @@
 [images]
   remote_images = ["https://.*\\.supabase\\.co/.*"]
 
+
 [[redirects]]
   from = "/api/products"
   to = "/.netlify/functions/products"
@@ -72,3 +73,4 @@
   from = "/*"
   to = "/.netlify/functions/ssr"
   status = 200
+

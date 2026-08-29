@@ -156,7 +156,7 @@ export async function render(url: string, baseUrl?: string): Promise<RenderResul
     category: selectedCategoryObj,
     categoryName: selectedCategoryObj?.name,
     search: parsed.search,
-    baseUrl: baseUrl || process.env.APP_URL || 'https://trendy-iq.com',
+    baseUrl: baseUrl || process.env.APP_URL || 'https://presteel-iq.com',
     currentUrl: url,
   });
 

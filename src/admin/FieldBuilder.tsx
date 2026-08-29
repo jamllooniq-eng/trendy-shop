@@ -50,7 +50,7 @@ export const FieldBuilder: React.FC<FieldBuilderProps> = ({ fields, onChange }) 
         <button
           type="button"
           onClick={addField}
-          className="flex items-center gap-1.5 text-sm font-bold text-[#22A39E] hover:text-[#1c8a86] transition-colors"
+          className="flex items-center gap-1.5 text-sm font-bold text-[#8B5E3C] hover:text-[#6B4226] transition-colors"
         >
           <Plus className="w-4 h-4" />
           إضافة حقل
@@ -109,7 +109,7 @@ export const FieldBuilder: React.FC<FieldBuilderProps> = ({ fields, onChange }) 
                 value={field.field_name}
                 onChange={(e) => updateField(index, { field_name: e.target.value })}
                 placeholder="مثال: اللون"
-                className="w-full px-2.5 py-2 rounded-lg border border-gray-300 text-sm focus:border-[#22A39E] outline-none"
+                className="w-full px-2.5 py-2 rounded-lg border border-gray-300 text-sm focus:border-[#8B5E3C] outline-none"
               />
             </div>
             <div className="col-span-1">
@@ -119,7 +119,7 @@ export const FieldBuilder: React.FC<FieldBuilderProps> = ({ fields, onChange }) 
                 value={field.placeholder || ''}
                 onChange={(e) => updateField(index, { placeholder: e.target.value })}
                 placeholder="مثال: اختر لونك"
-                className="w-full px-2.5 py-2 rounded-lg border border-gray-300 text-sm focus:border-[#22A39E] outline-none"
+                className="w-full px-2.5 py-2 rounded-lg border border-gray-300 text-sm focus:border-[#8B5E3C] outline-none"
               />
             </div>
           </div>
@@ -132,7 +132,7 @@ export const FieldBuilder: React.FC<FieldBuilderProps> = ({ fields, onChange }) 
                 onChange={(e) =>
                   updateField(index, { field_type: e.target.value as 'text' | 'select' })
                 }
-                className="w-full px-2.5 py-2 rounded-lg border border-gray-300 text-sm focus:border-[#22A39E] outline-none bg-white"
+                className="w-full px-2.5 py-2 rounded-lg border border-gray-300 text-sm focus:border-[#8B5E3C] outline-none bg-white"
               >
                 <option value="text">كتابة حرة</option>
                 <option value="select">اختيارات (قائمة)</option>
@@ -143,7 +143,7 @@ export const FieldBuilder: React.FC<FieldBuilderProps> = ({ fields, onChange }) 
                 type="checkbox"
                 checked={field.required}
                 onChange={(e) => updateField(index, { required: e.target.checked })}
-                className="w-4 h-4 accent-[#22A39E]"
+                className="w-4 h-4 accent-[#8B5E3C]"
               />
               حقل إجباري
             </label>
@@ -159,7 +159,7 @@ export const FieldBuilder: React.FC<FieldBuilderProps> = ({ fields, onChange }) 
                 value={field.options || ''}
                 onChange={(e) => updateField(index, { options: e.target.value })}
                 placeholder="أحمر، أزرق، أسود"
-                className="w-full px-2.5 py-2 rounded-lg border border-gray-300 text-sm focus:border-[#22A39E] outline-none"
+                className="w-full px-2.5 py-2 rounded-lg border border-gray-300 text-sm focus:border-[#8B5E3C] outline-none"
               />
             </div>
           )}

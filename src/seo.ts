@@ -25,10 +25,10 @@ function escapeHtml(str: string): string {
  * Builds <title>, meta description, OpenGraph, Twitter Cards, Canonical link, and JSON-LD structured data
  */
 export function generateHeadTags(options: GenerateSeoOptions): string {
-  const baseUrl = (options.baseUrl || 'https://trendy-iq.com').replace(/\/$/, '');
-  const siteName = 'تريندي | TRENDY';
+  const baseUrl = (options.baseUrl || 'https://presteel-iq.com').replace(/\/$/, '');
+  const siteName = 'برستيل | PRESTEEL';
   const defaultDesc =
-    'تريندي - وجهتك الأولى في العراق للتسوق المباشر لأحدث الأجهزة، الإلكترونيات، ولوازم المنزل مع التوصيل المجاني والدفع عند الاستلام والمعاينة.';
+    'برستيل - وجهتك الأولى في العراق للتسوق المباشر لأحدث الأجهزة، الإلكترونيات، ولوازم المنزل مع التوصيل المجاني والدفع عند الاستلام والمعاينة.';
   const defaultImage = `${baseUrl}/og-cover.png`;
 
   let title = `${siteName} - متجر إلكتروني للأجهزة والمنتجات الحديثة`;
@@ -64,16 +64,16 @@ export function generateHeadTags(options: GenerateSeoOptions): string {
         url: canonicalUrl,
         seller: {
           '@type': 'Organization',
-          name: 'تريندي (TRENDY)',
+          name: 'برستيل (PRESTEEL)',
         },
       },
     };
   } else if (options.categoryName) {
     title = `${options.categoryName} - تسوق أفضل العروض | ${siteName}`;
-    description = `تسوق تشكيلة واسعة من منتجات ${options.categoryName} في العراق مع توصيل مجاني ودفع عند الاستلام من متجر تريندي.`;
+    description = `تسوق تشكيلة واسعة من منتجات ${options.categoryName} في العراق مع توصيل مجاني ودفع عند الاستلام من متجر برستيل.`;
   } else if (options.search) {
     title = `نتائج البحث عن: "${options.search}" | ${siteName}`;
-    description = `شاهد المنتجات والعروض المتطابقة مع بحثك عن "${options.search}" في متجر تريندي العراق.`;
+    description = `شاهد المنتجات والعروض المتطابقة مع بحثك عن "${options.search}" في متجر برستيل العراق.`;
   } else if (options.view === 'unavailable') {
     title = `تعذّر تحميل المنتج مؤقتاً | ${siteName}`;
     description = 'قد يكون هناك ضغط مؤقت على الخادم. يرجى تحديث الصفحة خلال لحظات.';

@@ -63,7 +63,7 @@ export const FunnelLandingPage: React.FC<FunnelLandingPageProps> = ({
     : null;
 
   return (
-    <div className="min-h-screen bg-white text-black font-['Cairo',sans-serif] flex flex-col selection:bg-[#22A39E] selection:text-white">
+    <div className="min-h-screen bg-white text-black font-['Cairo',sans-serif] flex flex-col selection:bg-[#8B5E3C] selection:text-white">
       {/* 1. High-Converting Funnel Minimal Header */}
       <FunnelHeader onScrollToOrder={scrollToOrder} />
 
@@ -77,7 +77,7 @@ export const FunnelLandingPage: React.FC<FunnelLandingPageProps> = ({
             {/* Column 1 (Gallery, Price Banner, & Product Details Box) */}
             <div className="lg:col-span-7 space-y-2 sm:space-y-2.5 min-w-0">
               {/* Prominent, Premium & Eye-Catching Price & Delivery Banner */}
-              <div className="rounded-2xl bg-gradient-to-l from-[#22A39E]/[0.07] via-white to-[#22A39E]/[0.07] border-2 border-[#22A39E]/30 p-3 sm:px-5 sm:py-3.5 shadow-xs transition-all hover:border-[#22A39E]/50">
+              <div className="rounded-2xl bg-gradient-to-l from-[#8B5E3C]/[0.07] via-white to-[#8B5E3C]/[0.07] border-2 border-[#8B5E3C]/30 p-3 sm:px-5 sm:py-3.5 shadow-xs transition-all hover:border-[#8B5E3C]/50">
                 <div className="flex items-center justify-between gap-3 sm:gap-6 flex-nowrap min-w-0">
                   {/* Price Section */}
                   <div className="flex items-baseline gap-1.5 sm:gap-2 shrink-0">
@@ -98,12 +98,12 @@ export const FunnelLandingPage: React.FC<FunnelLandingPageProps> = ({
                   {/* Badges Section (Delivery + Discount) */}
                   <div className="flex items-center gap-1.5 sm:gap-2.5 shrink-0">
                     {discountPercentage && (
-                      <span className="inline-flex items-center bg-[#22A39E] text-white text-[11px] sm:text-xs font-black px-2.5 py-1 rounded-xl shadow-2xs">
+                      <span className="inline-flex items-center bg-[#8B5E3C] text-white text-[11px] sm:text-xs font-black px-2.5 py-1 rounded-xl shadow-2xs">
                         خصم {discountPercentage}%
                       </span>
                     )}
-                    <div className="inline-flex items-center gap-1.5 bg-[#22A39E]/15 border border-[#22A39E]/30 text-[#177773] text-xs sm:text-sm font-black px-3 py-1.5 rounded-xl shadow-2xs">
-                      <Truck className="w-4 h-4 text-[#22A39E] shrink-0" />
+                    <div className="inline-flex items-center gap-1.5 bg-[#8B5E3C]/15 border border-[#8B5E3C]/30 text-[#177773] text-xs sm:text-sm font-black px-3 py-1.5 rounded-xl shadow-2xs">
+                      <Truck className="w-4 h-4 text-[#8B5E3C] shrink-0" />
                       <span>توصيل مجاني</span>
                     </div>
                   </div>
@@ -171,10 +171,10 @@ export const FunnelLandingPage: React.FC<FunnelLandingPageProps> = ({
               type="button"
               onClick={onBackToHome}
               className="inline-flex flex-col items-center justify-center cursor-pointer group focus:outline-none transition-all active:scale-98 text-center"
-              title="TRENDY - العودة للرئيسية"
+              title="PRESTEEL - العودة للرئيسية"
             >
-              <span className="font-black text-2xl sm:text-3xl tracking-[0.18em] text-gray-900 group-hover:text-[#22A39E] transition-colors uppercase font-sans">
-                TAMAM <span className="text-[#22A39E]">SHOP</span>
+              <span className="font-black text-2xl sm:text-3xl tracking-[0.18em] text-gray-900 group-hover:text-[#8B5E3C] transition-colors uppercase font-sans">
+                TAMAM <span className="text-[#8B5E3C]">SHOP</span>
               </span>
               <span className="text-[11px] text-gray-400 font-medium mt-1">تسوق موثوق ومباشر في العراق 🇮🇶</span>
             </button>
@@ -182,7 +182,7 @@ export const FunnelLandingPage: React.FC<FunnelLandingPageProps> = ({
             {/* Concise Trust Badges */}
             <div className="flex items-center gap-2 sm:gap-2.5 flex-wrap justify-center text-xs text-gray-700">
               <div className="flex items-center gap-1.5 bg-white border border-gray-200/80 px-3 py-1.5 rounded-xl shadow-2xs">
-                <Truck className="w-3.5 h-3.5 text-[#22A39E]" />
+                <Truck className="w-3.5 h-3.5 text-[#8B5E3C]" />
                 <span className="font-semibold text-xs">توصيل سريع</span>
               </div>
               <div className="flex items-center gap-1.5 bg-white border border-gray-200/80 px-3 py-1.5 rounded-xl shadow-2xs">
@@ -201,7 +201,7 @@ export const FunnelLandingPage: React.FC<FunnelLandingPageProps> = ({
             <button
               type="button"
               onClick={() => onOpenPolicy('about')}
-              className="hover:text-[#22A39E] transition-colors cursor-pointer py-1"
+              className="hover:text-[#8B5E3C] transition-colors cursor-pointer py-1"
             >
               من نحن
             </button>
@@ -209,7 +209,7 @@ export const FunnelLandingPage: React.FC<FunnelLandingPageProps> = ({
             <button
               type="button"
               onClick={() => onOpenPolicy('returns')}
-              className="hover:text-[#22A39E] transition-colors cursor-pointer py-1"
+              className="hover:text-[#8B5E3C] transition-colors cursor-pointer py-1"
             >
               سياسة الاسترجاع والاستبدال
             </button>
@@ -217,7 +217,7 @@ export const FunnelLandingPage: React.FC<FunnelLandingPageProps> = ({
             <button
               type="button"
               onClick={() => onOpenPolicy('terms')}
-              className="hover:text-[#22A39E] transition-colors cursor-pointer py-1"
+              className="hover:text-[#8B5E3C] transition-colors cursor-pointer py-1"
             >
               الشروط والأحكام
             </button>
@@ -225,7 +225,7 @@ export const FunnelLandingPage: React.FC<FunnelLandingPageProps> = ({
             <button
               type="button"
               onClick={() => onOpenPolicy('privacy')}
-              className="hover:text-[#22A39E] transition-colors cursor-pointer py-1"
+              className="hover:text-[#8B5E3C] transition-colors cursor-pointer py-1"
             >
               سياسة الخصوصية
             </button>
@@ -233,7 +233,7 @@ export const FunnelLandingPage: React.FC<FunnelLandingPageProps> = ({
 
           {/* Bottom Copyright & Guarantee note */}
           <div className="pt-3 border-t border-gray-200/60 flex flex-col sm:flex-row items-center justify-between gap-2 text-[11px] text-gray-400 text-center sm:text-right">
-            <p>جميع الحقوق محفوظة © {new Date().getFullYear()} <span className="text-gray-600 font-semibold">تريندي</span></p>
+            <p>جميع الحقوق محفوظة © {new Date().getFullYear()} <span className="text-gray-600 font-semibold">برستيل</span></p>
             <p className="flex items-center justify-center gap-1.5 text-gray-500 font-medium">
               <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 inline-block"></span>
               <span>تسوق آمن ومباشر 100% في العراق</span>

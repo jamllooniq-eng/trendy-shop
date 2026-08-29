@@ -33,7 +33,7 @@ export const AdminApp: React.FC = () => {
   if (checkingSession) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-gray-50">
-        <LoaderCircle className="w-6 h-6 animate-spin text-[#22A39E]" />
+        <LoaderCircle className="w-6 h-6 animate-spin text-[#8B5E3C]" />
       </div>
     );
   }
@@ -47,8 +47,8 @@ export const AdminApp: React.FC = () => {
       <header className="bg-white border-b border-gray-200 sticky top-0 z-10">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <Store className="w-5 h-5 text-[#22A39E]" />
-            <span className="font-extrabold text-gray-900">لوحة تحكم تريندي</span>
+            <Store className="w-5 h-5 text-[#8B5E3C]" />
+            <span className="font-extrabold text-gray-900">لوحة تحكم برستيل</span>
           </div>
           <button
             onClick={handleLogout}

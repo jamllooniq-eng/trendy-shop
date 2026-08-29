@@ -40,14 +40,14 @@ export const FunnelSteps: React.FC = () => {
           return (
             <div
               key={idx}
-              className="relative p-5 rounded-2xl bg-[#F7F7F7] border border-[#E5E5E5] flex flex-col items-center text-center group hover:bg-white hover:border-[#22A39E] transition-all"
+              className="relative p-5 rounded-2xl bg-[#F7F7F7] border border-[#E5E5E5] flex flex-col items-center text-center group hover:bg-white hover:border-[#8B5E3C] transition-all"
             >
               {/* Step Number Badge */}
-              <div className="absolute -top-3 right-5 w-7 h-7 rounded-full bg-[#22A39E] text-white text-xs font-black flex items-center justify-center border-2 border-white shadow-2xs">
+              <div className="absolute -top-3 right-5 w-7 h-7 rounded-full bg-[#8B5E3C] text-white text-xs font-black flex items-center justify-center border-2 border-white shadow-2xs">
                 {s.num}
               </div>
 
-              <div className="w-12 h-12 rounded-xl bg-white text-[#22A39E] flex items-center justify-center mb-3 shadow-2xs group-hover:scale-110 transition-transform">
+              <div className="w-12 h-12 rounded-xl bg-white text-[#8B5E3C] flex items-center justify-center mb-3 shadow-2xs group-hover:scale-110 transition-transform">
                 <Icon className="w-6 h-6" />
               </div>
 

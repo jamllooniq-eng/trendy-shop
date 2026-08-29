@@ -181,7 +181,7 @@ export async function processOrder(
   const unitPrice = Math.max(0, Number(payload.unit_price || 0));
   const expectedTotal = unitPrice * count;
   const itemId = String(payload.item_id || '').trim();
-  const productName = String(payload.product_name || 'منتج تريندي').trim();
+  const productName = String(payload.product_name || 'منتج برستيل').trim();
   const notes = String(payload.note || '').trim();
 
   // 2. Duplicate Check within 5 minutes
@@ -251,7 +251,7 @@ export async function processOrder(
 
 المبلغ الإجمالي: ${expectedTotal.toLocaleString('en-US')} د.ع`;
 
-    const productPageUrl = `${(process.env.APP_URL || 'https://trendy-iq.com').replace(/\/+$/, '')}/product/${itemId}`;
+    const productPageUrl = `${(process.env.APP_URL || 'https://presteel-iq.com').replace(/\/+$/, '')}/product/${itemId}`;
 
     const [sheetsSuccess, telegramSuccess] = await Promise.all([
       sendToGoogleSheetsWithRetry(sheetData),

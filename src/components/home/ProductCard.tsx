@@ -17,7 +17,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, onSelect, pri
   return (
     <div
       id={`product-card-${product.id}`}
-      className="bg-white border border-gray-200/85 hover:border-[#22A39E]/60 rounded-2xl overflow-hidden flex flex-col justify-between hover:shadow-md transition-all duration-300 group"
+      className="bg-white border border-gray-200/85 hover:border-[#8B5E3C]/60 rounded-2xl overflow-hidden flex flex-col justify-between hover:shadow-md transition-all duration-300 group"
     >
       {/* Image container */}
       <div
@@ -43,13 +43,13 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, onSelect, pri
         ) : (
           <div className="flex flex-col items-center justify-center text-gray-400">
             <ShoppingBag className="w-10 h-10 mb-2 opacity-50" />
-            <span className="text-xs">تريندي</span>
+            <span className="text-xs">برستيل</span>
           </div>
         )}
 
         {/* Real Discount Badge if old_price is present */}
         {product.old_price && product.old_price > product.price && (
-          <div className="absolute top-2.5 left-2.5 bg-[#22A39E] text-white text-[10px] sm:text-[11px] font-bold px-2.5 py-0.5 rounded-full shadow-xs">
+          <div className="absolute top-2.5 left-2.5 bg-[#8B5E3C] text-white text-[10px] sm:text-[11px] font-bold px-2.5 py-0.5 rounded-full shadow-xs">
             وفر {(product.old_price - product.price).toLocaleString('en-US')} د.ع
           </div>
         )}
@@ -68,7 +68,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, onSelect, pri
           {/* Product Title */}
           <h3
             onClick={() => onSelect(product)}
-            className="text-xs sm:text-sm font-bold text-gray-900 line-clamp-2 leading-snug cursor-pointer group-hover:text-[#22A39E] transition-colors mb-3 break-words"
+            className="text-xs sm:text-sm font-bold text-gray-900 line-clamp-2 leading-snug cursor-pointer group-hover:text-[#8B5E3C] transition-colors mb-3 break-words"
             title={product.title}
           >
             {product.title}
@@ -79,7 +79,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, onSelect, pri
         <div className="pt-2.5 border-t border-gray-100 min-w-0">
           <div className="flex items-baseline justify-between mb-2.5 sm:mb-3 min-w-0 gap-1 flex-wrap">
             <div className="min-w-0 flex items-baseline">
-              <span className="text-sm sm:text-base md:text-lg font-black text-[#22A39E] truncate">
+              <span className="text-sm sm:text-base md:text-lg font-black text-[#8B5E3C] truncate">
                 {product.price.toLocaleString('en-US')}
               </span>
               <span className="text-[11px] sm:text-xs font-bold text-gray-500 mr-1 shrink-0">
@@ -97,7 +97,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, onSelect, pri
           <button
             id={`order-btn-${product.id}`}
             onClick={() => onSelect(product)}
-            className="w-full min-h-[40px] sm:min-h-[42px] py-2 px-3 rounded-xl bg-[#22A39E] hover:bg-[#1b8581] active:scale-[0.99] text-white text-xs sm:text-sm font-bold flex items-center justify-center gap-1.5 transition-all shadow-xs hover:shadow-sm cursor-pointer select-none"
+            className="w-full min-h-[40px] sm:min-h-[42px] py-2 px-3 rounded-xl bg-[#8B5E3C] hover:bg-[#1b8581] active:scale-[0.99] text-white text-xs sm:text-sm font-bold flex items-center justify-center gap-1.5 transition-all shadow-xs hover:shadow-sm cursor-pointer select-none"
           >
             <span>اطلب الآن</span>
             <ArrowLeft className="w-3.5 h-3.5 shrink-0" />

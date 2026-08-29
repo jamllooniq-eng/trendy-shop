@@ -69,7 +69,7 @@ export const SuccessView: React.FC<SuccessViewProps> = ({
         <div className="bg-gray-50/70 border border-gray-200/80 rounded-2xl p-4 sm:p-4.5 space-y-3.5 shadow-2xs">
           {/* Card Header: Details Title */}
           <div className="flex items-center gap-1.5 text-xs font-bold text-gray-500 pb-2 border-b border-gray-200/60">
-            <ShoppingBag className="w-3.5 h-3.5 text-[#22A39E]" />
+            <ShoppingBag className="w-3.5 h-3.5 text-[#8B5E3C]" />
             <span>تفاصيل الطلب</span>
           </div>
 
@@ -89,9 +89,9 @@ export const SuccessView: React.FC<SuccessViewProps> = ({
                   }}
                 />
               ) : (
-                <div className="text-[10px] font-bold text-[#22A39E] flex flex-col items-center">
+                <div className="text-[10px] font-bold text-[#8B5E3C] flex flex-col items-center">
                   <ShoppingBag className="w-5 h-5 mb-0.5 opacity-40" />
-                  <span>تريندي</span>
+                  <span>برستيل</span>
                 </div>
               )}
             </div>
@@ -127,15 +127,15 @@ export const SuccessView: React.FC<SuccessViewProps> = ({
           <div className="pt-3 border-t border-gray-200/80 flex items-center justify-between gap-3">
             {/* Right side (RTL first child): Total Price (Number + Currency) */}
             <div className="flex items-baseline gap-1 text-gray-900">
-              <span className="text-[#22A39E] text-lg sm:text-xl font-black tracking-tight">
+              <span className="text-[#8B5E3C] text-lg sm:text-xl font-black tracking-tight">
                 {totalPrice.toLocaleString('en-US')}
               </span>
               <span className="text-xs font-bold text-gray-700">د.ع</span>
             </div>
 
             {/* Left side (RTL second child): Free Delivery Badge */}
-            <div className="inline-flex items-center gap-1.5 text-[#22A39E] text-xs sm:text-sm font-bold">
-              <Truck className="w-4 h-4 text-[#22A39E] shrink-0" />
+            <div className="inline-flex items-center gap-1.5 text-[#8B5E3C] text-xs sm:text-sm font-bold">
+              <Truck className="w-4 h-4 text-[#8B5E3C] shrink-0" />
               <span>توصيل مجاني</span>
             </div>
           </div>

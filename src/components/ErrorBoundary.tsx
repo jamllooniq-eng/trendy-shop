@@ -53,7 +53,7 @@ export class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundarySt
       }
 
       return (
-        <div className="min-h-screen flex flex-col items-center justify-center bg-white text-black font-['Cairo',sans-serif] px-4 py-16 selection:bg-[#22A39E] selection:text-white">
+        <div className="min-h-screen flex flex-col items-center justify-center bg-white text-black font-['Cairo',sans-serif] px-4 py-16 selection:bg-[#8B5E3C] selection:text-white">
           <div className="max-w-md w-full text-center space-y-6">
             {/* Warning Icon Badge */}
             <div className="w-20 h-20 sm:w-24 sm:h-24 mx-auto rounded-3xl bg-amber-50 border border-amber-200/80 flex items-center justify-center text-amber-600 shadow-2xs">
@@ -75,7 +75,7 @@ export class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundarySt
               <button
                 type="button"
                 onClick={this.handleReload}
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-[#22A39E] hover:bg-[#1b8581] text-white font-extrabold text-sm shadow-xs hover:shadow-md transition-all cursor-pointer active:scale-95"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-[#8B5E3C] hover:bg-[#1b8581] text-white font-extrabold text-sm shadow-xs hover:shadow-md transition-all cursor-pointer active:scale-95"
               >
                 <RotateCcw className="w-4 h-4" />
                 <span>إعادة تحميل الصفحة</span>

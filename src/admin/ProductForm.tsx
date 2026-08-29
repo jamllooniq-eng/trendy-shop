@@ -226,7 +226,7 @@ export const ProductForm: React.FC<ProductFormProps> = ({ productId, onDone, onC
   if (loading) {
     return (
       <div className="flex items-center justify-center py-20">
-        <LoaderCircle className="w-6 h-6 animate-spin text-[#22A39E]" />
+        <LoaderCircle className="w-6 h-6 animate-spin text-[#8B5E3C]" />
       </div>
     );
   }
@@ -252,7 +252,7 @@ export const ProductForm: React.FC<ProductFormProps> = ({ productId, onDone, onC
             type="text"
             value={title}
             onChange={(e) => setTitle(e.target.value)}
-            className="w-full px-3 py-2.5 rounded-xl border border-gray-300 focus:border-[#22A39E] outline-none text-sm"
+            className="w-full px-3 py-2.5 rounded-xl border border-gray-300 focus:border-[#8B5E3C] outline-none text-sm"
           />
         </div>
 
@@ -263,7 +263,7 @@ export const ProductForm: React.FC<ProductFormProps> = ({ productId, onDone, onC
               type="number"
               value={price}
               onChange={(e) => setPrice(e.target.value)}
-              className="w-full px-3 py-2.5 rounded-xl border border-gray-300 focus:border-[#22A39E] outline-none text-sm"
+              className="w-full px-3 py-2.5 rounded-xl border border-gray-300 focus:border-[#8B5E3C] outline-none text-sm"
             />
           </div>
           <div>
@@ -272,7 +272,7 @@ export const ProductForm: React.FC<ProductFormProps> = ({ productId, onDone, onC
               type="number"
               value={oldPrice}
               onChange={(e) => setOldPrice(e.target.value)}
-              className="w-full px-3 py-2.5 rounded-xl border border-gray-300 focus:border-[#22A39E] outline-none text-sm"
+              className="w-full px-3 py-2.5 rounded-xl border border-gray-300 focus:border-[#8B5E3C] outline-none text-sm"
               placeholder="اختياري"
             />
           </div>
@@ -285,7 +285,7 @@ export const ProductForm: React.FC<ProductFormProps> = ({ productId, onDone, onC
               type="text"
               value={category}
               onChange={(e) => setCategory(e.target.value)}
-              className="w-full px-3 py-2.5 rounded-xl border border-gray-300 focus:border-[#22A39E] outline-none text-sm"
+              className="w-full px-3 py-2.5 rounded-xl border border-gray-300 focus:border-[#8B5E3C] outline-none text-sm"
               placeholder="مثال: إلكترونيات"
             />
           </div>
@@ -295,7 +295,7 @@ export const ProductForm: React.FC<ProductFormProps> = ({ productId, onDone, onC
               type="number"
               value={stock}
               onChange={(e) => setStock(e.target.value)}
-              className="w-full px-3 py-2.5 rounded-xl border border-gray-300 focus:border-[#22A39E] outline-none text-sm"
+              className="w-full px-3 py-2.5 rounded-xl border border-gray-300 focus:border-[#8B5E3C] outline-none text-sm"
               placeholder="اختياري"
             />
           </div>
@@ -307,7 +307,7 @@ export const ProductForm: React.FC<ProductFormProps> = ({ productId, onDone, onC
             value={description}
             onChange={(e) => setDescription(e.target.value)}
             rows={4}
-            className="w-full px-3 py-2.5 rounded-xl border border-gray-300 focus:border-[#22A39E] outline-none text-sm resize-none"
+            className="w-full px-3 py-2.5 rounded-xl border border-gray-300 focus:border-[#8B5E3C] outline-none text-sm resize-none"
           />
         </div>
 
@@ -320,7 +320,7 @@ export const ProductForm: React.FC<ProductFormProps> = ({ productId, onDone, onC
             onChange={(e) => setFeaturesText(e.target.value)}
             rows={3}
             placeholder={'مثال:\nضمان سنة كاملة\nتوصيل خلال 24 ساعة'}
-            className="w-full px-3 py-2.5 rounded-xl border border-gray-300 focus:border-[#22A39E] outline-none text-sm resize-none"
+            className="w-full px-3 py-2.5 rounded-xl border border-gray-300 focus:border-[#8B5E3C] outline-none text-sm resize-none"
           />
         </div>
 
@@ -339,9 +339,9 @@ export const ProductForm: React.FC<ProductFormProps> = ({ productId, onDone, onC
               </button>
             </div>
           ) : (
-            <label className="flex flex-col items-center justify-center w-32 h-32 rounded-xl border-2 border-dashed border-gray-300 cursor-pointer hover:border-[#22A39E] transition-colors">
+            <label className="flex flex-col items-center justify-center w-32 h-32 rounded-xl border-2 border-dashed border-gray-300 cursor-pointer hover:border-[#8B5E3C] transition-colors">
               {uploadingMain ? (
-                <LoaderCircle className="w-5 h-5 animate-spin text-[#22A39E]" />
+                <LoaderCircle className="w-5 h-5 animate-spin text-[#8B5E3C]" />
               ) : (
                 <>
                   <UploadCloud className="w-5 h-5 text-gray-400 mb-1" />
@@ -369,9 +369,9 @@ export const ProductForm: React.FC<ProductFormProps> = ({ productId, onDone, onC
                 </button>
               </div>
             ))}
-            <label className="flex flex-col items-center justify-center w-20 h-20 rounded-lg border-2 border-dashed border-gray-300 cursor-pointer hover:border-[#22A39E] transition-colors">
+            <label className="flex flex-col items-center justify-center w-20 h-20 rounded-lg border-2 border-dashed border-gray-300 cursor-pointer hover:border-[#8B5E3C] transition-colors">
               {uploadingGallery ? (
-                <LoaderCircle className="w-4 h-4 animate-spin text-[#22A39E]" />
+                <LoaderCircle className="w-4 h-4 animate-spin text-[#8B5E3C]" />
               ) : (
                 <Plus className="w-4 h-4 text-gray-400" />
               )}
@@ -391,7 +391,7 @@ export const ProductForm: React.FC<ProductFormProps> = ({ productId, onDone, onC
             type="checkbox"
             checked={available}
             onChange={(e) => setAvailable(e.target.checked)}
-            className="w-4 h-4 accent-[#22A39E]"
+            className="w-4 h-4 accent-[#8B5E3C]"
           />
           المنتج متاح للطلب
         </label>
@@ -410,7 +410,7 @@ export const ProductForm: React.FC<ProductFormProps> = ({ productId, onDone, onC
           <button
             type="submit"
             disabled={saving || uploadingMain || uploadingGallery}
-            className="flex-1 bg-[#22A39E] hover:bg-[#1c8a86] disabled:opacity-60 text-white font-bold py-2.5 rounded-xl transition-colors flex items-center justify-center gap-2"
+            className="flex-1 bg-[#8B5E3C] hover:bg-[#6B4226] disabled:opacity-60 text-white font-bold py-2.5 rounded-xl transition-colors flex items-center justify-center gap-2"
           >
             {saving ? <LoaderCircle className="w-4 h-4 animate-spin" /> : null}
             {saving ? 'جارِ الحفظ...' : 'حفظ المنتج'}

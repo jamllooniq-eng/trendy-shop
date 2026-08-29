@@ -38,7 +38,7 @@ export const ProductFAQ: React.FC = () => {
               key={idx}
               className={`rounded-2xl border transition-all duration-200 overflow-hidden bg-white ${
                 isOpen
-                  ? 'border-[#22A39E] shadow-sm shadow-[#22A39E]/5'
+                  ? 'border-[#8B5E3C] shadow-sm shadow-[#8B5E3C]/5'
                   : 'border-gray-200/90 hover:border-gray-300 shadow-2xs'
               }`}
             >
@@ -52,15 +52,15 @@ export const ProductFAQ: React.FC = () => {
                   <div
                     className={`w-8 h-8 rounded-xl flex items-center justify-center shrink-0 transition-colors ${
                       isOpen
-                        ? 'bg-[#22A39E] text-white shadow-2xs'
-                        : 'bg-[#F4F6F8] text-[#22A39E] group-hover:bg-[#22A39E]/15'
+                        ? 'bg-[#8B5E3C] text-white shadow-2xs'
+                        : 'bg-[#F4F6F8] text-[#8B5E3C] group-hover:bg-[#8B5E3C]/15'
                     }`}
                   >
                     <HelpCircle className="w-4.5 h-4.5" />
                   </div>
                   <span
                     className={`text-xs sm:text-sm font-bold transition-colors break-words min-w-0 flex-1 leading-snug ${
-                      isOpen ? 'text-[#1B8581]' : 'text-gray-900 group-hover:text-[#22A39E]'
+                      isOpen ? 'text-[#1B8581]' : 'text-gray-900 group-hover:text-[#8B5E3C]'
                     }`}
                   >
                     {faq.q}
@@ -70,7 +70,7 @@ export const ProductFAQ: React.FC = () => {
                 <div
                   className={`w-7 h-7 rounded-full flex items-center justify-center shrink-0 transition-transform duration-200 ${
                     isOpen
-                      ? 'bg-[#22A39E]/10 text-[#22A39E] rotate-180'
+                      ? 'bg-[#8B5E3C]/10 text-[#8B5E3C] rotate-180'
                       : 'bg-gray-100 text-gray-400 group-hover:bg-gray-200/70 group-hover:text-gray-600'
                   }`}
                 >

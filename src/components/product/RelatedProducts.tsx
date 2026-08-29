@@ -23,7 +23,7 @@ export const RelatedProducts: React.FC<RelatedProductsProps> = ({
   return (
     <div id="related-products-section" className="mt-14 pt-10 border-t border-[#E5E5E5]">
       <div className="flex items-center gap-2 mb-6">
-        <Sparkles className="w-5 h-5 text-[#22A39E]" />
+        <Sparkles className="w-5 h-5 text-[#8B5E3C]" />
         <h3 className="text-lg sm:text-xl font-bold text-black">
           منتجات قد تنال إعجابك أيضاً
         </h3>

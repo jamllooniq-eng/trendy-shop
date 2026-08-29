@@ -35,7 +35,7 @@ export const FunnelUrgency: React.FC<FunnelUrgencyProps> = ({ stock, available =
       <div className="w-full bg-gray-100 h-1.5 rounded-full overflow-hidden">
         <div
           className={`h-full rounded-full ${
-            isOutOfStock ? 'bg-red-400 w-full' : 'bg-[#22A39E] w-full'
+            isOutOfStock ? 'bg-red-400 w-full' : 'bg-[#8B5E3C] w-full'
           }`}
         />
       </div>
